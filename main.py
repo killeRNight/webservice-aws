@@ -1,4 +1,4 @@
-from src import logic
+from src.logic import wiki
 
 
-print(logic())
+print(wiki())
