@@ -5,13 +5,15 @@ install:
 
 format:
 	# format code
-	black *.py src/*.py
+	black .
 
 lint:
 	# flake8 or pylint
+	pylint --disable=R,C *.py src/*.py
 
 test:
 	# test
+	pytest -vv --cov=src
 
 deploy:
 	# deploy
